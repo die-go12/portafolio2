@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portafolio — Diego Lopez | UPCH</title>
+  <meta name="description" content="Portafolio personal: presentación, proyectos y reflexiones universitarias." />
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Librería TagCloud correcta -->
+  <script src="https://cdn.jsdelivr.net/npm/tagcloud@2.2.0/dist/TagCloud.min.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Ir al inicio"><span class="dot"></span> Portafolio</a>
+      <nav class="links" aria-label="Principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#reflexiones">Reflexiones</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <div class="actions">
+        <!-- deshabilitacion del modo claro -->
+        <!-- <button id="themeToggle" class="btn" title="Cambiar tema" aria-label="Cambiar tema">🌓</button> -->
+        <a class="btn btn-primary" href="#contacto">Hablemos</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main id="top" class="container scroll-container">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="presentacion">
+      
+      <div class="hero-content">
+        <span class="badge">Portafolio universitario — UPCH</span>
+        <h1 id="presentacion" class="title">Hola, soy <span class="grad">Diego Lopez</span> 👋</h1>
+        <p class="lead">Estudiante de Ingeniería Informática. Me interesan el backend, los algoritmos y construir soluciones útiles. Aquí comparto quién soy, mis proyectos y lo que voy aprendiendo en la vida universitaria.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#" target="_blank" rel="noopener">Descargar CV</a>
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+        </div>
+      </div>
+      <div class="avatar-wrap">
+        <div class="avatar" aria-hidden="true">
+          <img src="img/foto.png" alt="Foto de perfil (reemplaza por la tuya)">
+        </div>
+      </div>
+    </section>
+
+    <!-- SOBRE MÍ -->
+    <section id="sobre-mi" aria-labelledby="tit-sobre-mi">
+      <h2 id="tit-sobre-mi" class="sec-title">Sobre mí</h2>
+      <p class="sec-sub">Breve biografía, gustos e intereses.</p>
+      <p>
+        Soy Diego, actualmente curso el sexto ciclo en la Universidad Peruana Cayetano Heredia. Me gusta aprender tecnologías nuevas, practicar programación y colaborar en proyectos con impacto.
+      </p>
+      <div class="chips" aria-label="Intereses">
+        <span class="chip">Backend</span>
+        <span class="chip">Algoritmos</span>
+        <span class="chip">Python</span>
+        <span class="chip">C++</span>
+        <span class="chip">Sistemas Operativos</span>
+        <span class="chip">Ciencia de Datos</span>
+      </div>
+
+      <!-- TagCloud / Cerebro 3D -->
+      <div id="skillCloud" class="tagcloud" aria-label="Tecnologías y herramientas"></div>
+    </section>
+
+    <!-- PROYECTOS -->
+    <section id="proyectos" aria-labelledby="tit-proy">
+      <h2 id="tit-proy" class="sec-title">Proyectos y dinámicas</h2>
+      <p class="sec-sub">Incluye trabajos del curso y de otros cursos de la universidad.</p>
+      <div class="grid" role="list">
+        <!-- CARD 1 -->
+        <article class="card" role="listitem">
+          <div class="thumb">
+            <img src="img/carrito.jpg" alt="Miniatura del proyecto CarritoPy">
+          </div>
+          <div class="content">
+            <div class="tags">
+              <span class="tag">Curso: Programación</span>
+              <span class="tag">Python</span>
+            </div>
+            <h3 class="title">CarritoPy — Simulador de tienda</h3>
+            <p class="desc">
+              Simulador de carrito de compras con gestión de inventario y análisis de complejidad. Enfoque en buenas prácticas y pruebas.
+            </p>
+            <div class="links">
+              <a class="btn" href="https://github.com/die-go12/carritoPy.git" target="_blank" rel="noopener">Repositorio</a>
+              <a class="btn" href="#" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 2 -->
+        <article class="card" role="listitem">
+          <div class="thumb">
+            <img src="img/dinamica.png" alt="Dinámica del Marshmallow Challenge">
+          </div>
+          <div class="content">
+            <div class="tags">
+              <span class="tag">Curso: Sistemas de Información</span>
+              <span class="tag">Trabajo en Equipo</span>
+            </div>
+            <h3 class="title">Marshmallow Challenge</h3>
+            <p class="desc">
+              Actividad grupal en la que usamos fideos, cinta y un marshmallow para construir la torre más alta posible. Fue una experiencia divertida que nos enseñó sobre comunicación, planificación y la importancia de probar ideas rápidamente.
+            </p>
+            <div class="links">
+              <a class="btn" href="#" target="_blank" rel="noopener">Ver Fotos</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- CARD 3 -->
+        <article class="card" role="listitem">
+          <div class="thumb">
+            <img src="img/tanospectra.jpeg" alt="Miniatura del proyecto TanoSpectra">
+          </div>
+          <div class="content">
+            <div class="tags">
+              <span class="tag">Proyecto</span>
+              <span class="tag">Hardware</span>
+            </div>
+            <h3 class="title">TanoSpectra — Prototipo portátil</h3>
+            <p class="desc">
+              Sistema portátil que registra variaciones de huella espectral en muestras alimentarias. Uso de microcontrolador y sensado.
+            </p>
+            <div class="links">
+              <a class="btn" href="https://github.com/die-go12/GRUPO_1_FUNDAMENTOS_DISE-O" target="_blank" rel="noopener">Repositorio</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- REFLEXIONES -->
+    <section id="reflexiones" aria-labelledby="tit-ref">
+      <h2 id="tit-ref" class="sec-title">Reflexiones sobre la vida universitaria</h2>
+      <p class="sec-sub">Espacio breve para compartir aprendizajes y retos del día a día en Cayetano.</p>
+      <article class="post">
+        <div>
+          <time datetime="2025-08-05">05 set 2025</time>
+          <h4>Organizarme mejor cambió mis resultados</h4>
+          <p class="lead">Pequeños hábitos como planificar la semana, estudiar con bloques de 50 minutos y practicar código a diario hicieron la diferencia.</p>
+        </div>
+      </article>
+      <article class="post">
+        <div>
+          <time datetime="2025-08-20">20 ago 2025</time>
+          <h4>Aprender pidiendo ayuda</h4>
+          <p class="lead">Formar grupos de estudio y preguntar sin miedo me permitió avanzar más rápido y con menos estrés.</p>
+        </div>
+      </article>
+    </section>
+    
+<!-- GALERÍA -->
+<section id="galeria" aria-labelledby="tit-gal">
+  <h2 id="tit-gal" class="sec-title">Galería</h2>
+  <p class="sec-sub">Fotos de proyectos, prácticas de laboratorio y momentos en campus.</p>
+  <div class="gallery">
+    <a href="#" class="gallery-item" data-img="img/app_tanospectra.jpeg"><img src="img/app_tanospectra.jpeg" alt="Foto 1"></a>
+    <a href="#" class="gallery-item" data-img="img/clase_algoritmos.jpeg"><img src="img/clase_algoritmos.jpeg" alt="Foto 2"></a>
+    <a href="#" class="gallery-item" data-img="img/proyecto_arquitectura_ordenadores.jpeg"><img src="img/proyecto_arquitectura_ordenadores.jpeg" alt="Foto 3"></a>
+    <a href="#" class="gallery-item" data-img="img/upch.jpeg"><img src="img/upch.jpeg" alt="Foto 4"></a>
+    <a href="#" class="gallery-item" data-img="img/ocio.png"><img src="img/ocio.png" alt="Foto 5"></a>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="Imagen ampliada">
+</div>
+
+     
+    <!-- CONTACTO -->
+    <section id="contacto" aria-labelledby="tit-ct">
+      <h2 id="tit-ct" class="sec-title">Contacto</h2>
+      <p class="sec-sub">¿Colaboramos? Escríbeme un mensaje.</p>
+      <form onsubmit="return sendMail(event)">
+        <label>
+          Nombre
+          <input required type="text" id="name" placeholder="Tu nombre" />
+        </label>
+        <label>
+          Email
+          <input required type="email" id="email" placeholder="tunombre@correo.com" />
+        </label>
+        <label>
+          Mensaje
+          <textarea required id="message" rows="5" placeholder="¿En qué te puedo ayudar?"></textarea>
+        </label>
+        <div class="cta">
+          <button class="btn btn-primary" type="submit">Enviar</button>
+          <a class="btn" href="mailto:juan.lopez.v@upch.pe">Abrir correo</a>
+        </div>
+      </form>
+      <div class="chips" style="margin-top:1rem">
+        <a class="chip" href="https://github.com/die-go12" target="_blank" rel="noopener">GitHub</a>
+        <a class="chip" href="https://www.linkedin.com/in/diego-lopez-1050492a5/" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Sección final con la Tierra -->
+  <section class="earth-section">
+    <img src="img/tierra.jpeg" alt="Planeta Tierra" class="earth-bg">
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <small>© <span id="year"></span> Diego Lopez. Hecho con HTML/CSS/JS y publicado en GitHub Pages.</small>
+    </div>
+  </footer>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
